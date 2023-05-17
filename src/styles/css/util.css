@@ -1,0 +1,170 @@
+/* @layer utilities {
+	.pt-full {
+		padding-top: 100%;
+	}
+	.items-center {
+		align-items: center;
+	}
+	.f-center {
+		align-items: center;
+		justify-content: center;
+	}
+	.no-select {
+		user-drag: none;
+		user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+} */
+
+.-translate-x-1\/2 {
+	--un-translate-x: -50% !important;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+p {
+	@apply
+		m-0
+		p-0
+}
+
+a {
+	@apply
+		text-primary-main
+		no-underline
+		hover:underline
+}
+
+.tooltip {
+	transform: translate(-50%, -100%);
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	@apply
+		fixed
+		transition-all
+		bg-background-contrast
+		max-w-64
+		p-2
+		rounded
+		pointer-events-none
+		opacity-100
+		text-sm
+}
+
+.tooltip::after {
+	content: " ";
+	border-style: solid;
+	border-width: 10px 10px 0 10px;
+	border-color: var(--theme-background-contrast) transparent transparent transparent;
+	transform: translate(-50%, 100%);
+	@apply
+		absolute
+		bottom-0
+		left-1/2
+
+}
+
+.tooltip.hidden {
+	@apply
+		opacity-0
+}
+
+.page {
+	@apply
+		p-8
+		<md:p-6
+		<sm:p-4
+		<xs:p-3
+}
+
+.divider {
+	@apply
+		h-[1px]
+		w-full
+		bg-divider
+}
+
+.thin-scroll {
+	scrollbar-width: 6px !important;
+}
+
+.thin-scroll::-webkit-scrollbar {
+	width: 6px !important;
+	height: 6px !important;
+}
+
+.thin-scroll::-webkit-scrollbar-track {
+	box-shadow: none
+}
+
+.thin-scroll::-webkit-scrollbar-thumb {
+	background-color: var(--theme-background-default);
+	border-radius: 1000px;
+}
+
+.loader {
+	animation: loader 1000ms infinite both ease-out alternate-reverse !important;
+	@apply
+		h-[1rem]
+		w-[1rem]
+		opacity-100
+		!bg-action-loading
+		rounded-md
+		inline-block
+}
+
+.loader.text {
+	@apply
+		h-[1em]
+		w-[7em]
+}
+
+img {
+	color: transparent;
+}
+
+
+@keyframes loader {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.7;
+	}
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.right-divider {
+	@apply
+		relative
+		mr-6
+}
+
+.right-divider::after {
+	content: " ";
+	@apply
+		absolute
+		-right-6
+		top-1/2
+		transform !-translate-y-1/2
+		w-[2px]
+		bg-action-unselected
+		h-10
+		transition-background-color
+}
+
+.flush-top, .flush-top::before {@apply !rounded-t-0}
+.flush-left, .flush-left::before {@apply !rounded-l-0}
+.flush-bottom, .flush-bottom::before {@apply !rounded-b-0}
+.flush-right, .flush-right::before {@apply !rounded-r-0}

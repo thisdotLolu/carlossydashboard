@@ -1,0 +1,92 @@
+.settings_page{
+    margin-left: 20px;
+    background-color: #FCFAF8;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.password_sections{
+    display: flex;
+    /* margin-left: 50px; */
+}
+.password_section_2{
+    margin-left: 100px;
+
+}
+.two_factor_auth button{
+    padding: 20px;
+    background-color:#582900;
+    border-radius: 10px;
+}
+.divider_settings{
+    margin-left: 40px;
+    margin-right: -50px;
+    margin-top: 10px;
+    height: 80vh;
+    background-color: #582900;
+    width: 1px;
+}
+.two_factor_auth .enable_2fa{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.disabled{
+    display: flex;
+
+}
+.password_section_settings{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+/* .old_password,.new_password,.confirm_password{
+    /* border: 1px solid; 
+} */
+
+.acts_log{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.acts_log .alert_email{
+    width: 20vw;
+}
+
+.password_section_inner{
+    margin-top: 20px;
+}
+.input_password{
+    background-color: #EEEAE6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid; */
+    width: 30vw;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.input_password input{
+    outline-width: 0;
+    font-family: Poppins;
+    height: 50px;
+    color:#582900;
+    background-color:#EEEAE6;
+    border: none;
+    width:20vw;
+    text-align: center;
+}
+input::placeholder{
+    font-family: Poppins;
+    text-align: center;
+}
+
+.tab_profile_settings{
+    margin-left: -30px;
+    width: 70vw;
+}
+.settings_page_container .welcomeText{
+    margin-left: 20px;
+}

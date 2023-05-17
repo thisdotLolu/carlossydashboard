@@ -1,0 +1,41 @@
+.dialog {
+	@apply
+		fixed
+		top-1/2 left-1/2
+		-translate-x-1/2 -translate-y-1/2
+		z-[21]
+		transition-all
+		duration-400
+}
+
+.dialog:not(.open) {
+	@apply
+		translate-y-[4rem]
+		top-full
+}
+
+.overlay {
+	@apply
+		z-[20]
+		fixed
+		top-0 left-0
+		w-full
+		h-full
+		bg-background-overlay
+		transition-opacity
+		duration-400
+}
+
+.overlay:not(.open) {
+	@apply
+		opacity-0
+		pointer-events-none
+}
+
+.dialog .close-button {
+	@apply
+		absolute
+		top-2
+		right-2
+		z-[5]
+}

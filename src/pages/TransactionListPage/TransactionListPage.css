@@ -1,0 +1,12 @@
+.transactions_page{
+    margin-left: 20px;
+}
+.transactions_page .dashboard-card{
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.transaction-item{
+    
+}

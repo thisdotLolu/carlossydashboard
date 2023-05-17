@@ -1,0 +1,242 @@
+.button {
+	-webkit-appearance: none;
+	--bg-color: #fff;
+	--bg-hover-color: #ccc;
+	--text-color: #000;
+	@apply
+		relative
+		flex
+		text-center
+		justify-center
+		items-center
+		outline-0
+		border-0
+		px-4
+		py-4
+		text-button
+		rounded-button
+		font-primary
+		cursor-pointer
+		!no-underline
+		outline-0 outline-solid outline-[var(--outline-color)]
+		outline-offset-1
+
+		transition-all
+}
+
+.button.compact {
+	@apply
+		px-2 py-1.5
+		text-base
+}
+
+.button.base {
+	--bg-color: #fff;
+	--bg-hover-color: var(--theme-action-hoverBackground);
+	--text-color: #000;
+}
+
+.button.transparent {
+	--bg-color: transparent;
+	--bg-hover-color: var(--theme-action-hover);
+	--text-color: var(--theme-text-primary);
+}
+
+.button.primary {
+	--bg-color: var(--theme-primary-main);
+	--bg-hover-color: var(--theme-primary-dark);
+	--text-color: var(--theme-primary-contrastText);
+}
+
+.button.secondary {
+	--bg-color: var(--theme-secondary-main);
+	--bg-hover-color: var(--theme-secondary-dark);
+	--text-color: var(--theme-secondary-contrastText);
+}
+
+.button.accent {
+	--bg-color: var(--theme-accent-main);
+	--bg-hover-color: var(--theme-accent-dark);
+	--text-color: var(--theme-accent-contrastText);
+}
+
+.button.bg-light {
+	--bg-color: var(--theme-background-paperLight);
+	--bg-hover-color: var(--theme-background-paperHighlight);
+	--text-color: var(--theme-text-primary);
+}
+
+.button.bg-paper {
+	--bg-color: var(--theme-background-paper);
+	--bg-hover-color: var(--theme-background-paperLight);
+	--text-color: var(--theme-text-primary);
+}
+
+
+.button.bg-contrast {
+	--bg-color:white;
+	--bg-hover-color:#744D2B;
+	--text-color: black;
+	border:1px solid white;
+}
+
+.button.text-col-unselected {
+	--text-color: var(--theme-action-unselected);
+}
+
+.button.text-col-secondary {
+	--text-color: var(--theme-text-secondary);
+}
+
+
+.button.disabled:not(.loading) {
+	--bg-color: var(--theme-action-disabled);
+	--bg-hover-color: var(--theme-action-disabled);
+	--text-color: var(--theme-text-primary);
+	@apply
+		cursor-default
+}
+
+.button {
+	--outline-color: var(--theme-primary-main)
+}
+
+.button.transparent {
+	--outline-color: var(--theme-primary-main)
+}
+
+.button.disabled {
+	@apply
+		cursor-default
+		pointer-events-none
+}
+
+.button.style-contained {
+	background-color:#582900;
+	color: white;
+	@apply
+		
+}
+
+.button.style-contained:not(.loading, .disabled):hover {
+	background-color:#582900;
+	@apply
+		
+}
+
+.button.style-outlined {
+	--text-color: var(--bg-color);
+	@apply
+		bg-transparent
+		border-2 border-[var(--bg-color)]
+		text-[var(--text-color)]
+}
+
+.button.style-outlined:not(.loading, .disabled):hover {
+	@apply
+		bg-[var(--theme-action-hover)]
+		border-[var(--bg-hover-color)]
+		text-[var(--bg-hover-color)]
+}
+
+.button.style-transparent {
+	--text-color: var(--bg-color);
+	@apply
+		bg-transparent
+		text-[var(--text-color)]
+}
+
+.button.style-transparent:not(.loading, .disabled):hover {
+	@apply
+		bg-[var(--theme-action-hover)]
+		text-[var(--bg-hover-color)]
+}
+
+.button.fluid {
+	@apply rounded-none
+}
+
+.button.text-fill span {
+	@apply
+		inline-block
+		w-full
+		text-left
+}
+
+.button svg {
+	@apply
+		fill-current
+}
+
+.button .icon-container {
+	@apply
+		inline-flex items-center
+}
+
+.button .icon-container svg {
+	@apply
+		h-6
+		w-6
+}
+
+.button.compact .icon-container svg {
+	@apply
+		h-4
+		w-4
+}
+
+.button:not(.empty) .icon-container {
+	@apply
+		mr-4
+}
+
+.button:not(.empty).icon {
+	@apply
+		pl-4
+		py-3
+}
+
+.button.empty.icon {
+	@apply
+		px-2
+		w-11 h-11
+}
+
+.button span {
+	@apply
+		align-top
+}
+
+.button.loading {
+	@apply
+		cursor-initial
+}
+
+.button .spinner-container {
+	@apply
+		absolute
+		left-1/2
+		top-1/2
+		transform
+		transform-center
+		!-translate-x-1/2
+		!-translate-y-1/2
+}
+
+.button .spinner-container circle {
+	@apply
+		stroke-[var(--text-color)]
+}
+
+.button:focus-visible {
+	@apply
+		outline-4
+}
+
+.button.size-tiny {
+	@apply
+		px-1.5
+		py-0.5
+		text-sm
+		rounded
+}

@@ -1,0 +1,30 @@
+.token-item {
+	@apply
+		flex items-center
+		width-full
+}
+
+.token-item .token-img {
+	@apply
+		w-8 h-8
+		mr-4
+		rounded-full
+}
+
+.token-item span {
+	@apply
+		text-base
+}
+
+.token-item .token-symbol {
+	@apply
+		font-bold
+		mr-1
+}
+
+.token-item .token-bonus {
+	@apply
+		ml-auto
+		font-bold
+		text-success-light
+}

@@ -1,0 +1,337 @@
+/* .referrals-page {
+	@apply
+		flex flex-col p-4
+		max-w-200
+		w-full
+		mx-auto
+
+		+md:flex-1
+		<md:min-h-[var(--screen-height)]
+}
+
+.referral-share-buttons {
+	@apply
+		flex
+		flex-wrap
+}
+
+.referral-share-buttons > .button {
+	@apply
+		flex-1
+		rounded
+}
+
+.referral-share-buttons.can-share a {
+	@apply
+		<md:hidden
+}
+
+.referral-share-buttons.can-share button {
+	@apply
+		+md:hidden
+}
+
+.referral-share-buttons:not(.can-share) button {
+	@apply
+		hidden
+}
+
+.referrals-description {
+	@apply
+		flex flex-col
+		items-start
+		bg-background-paperLight
+		p-6
+		rounded-item
+}
+
+.referrals-description h1 {
+	@apply
+		text-2xl
+}
+
+
+.referral-stats {
+	@apply
+		flex !flex-row
+}
+
+
+.referral-stat {
+	@apply
+		relative
+		z-[2]
+		flex flex-col
+		items-center justify-center
+		p-4
+		flex-1
+}
+
+.referral-stat-value {
+	@apply
+		text-3xl
+		font-semibold
+		<sm:text-2xl
+		<xs:text-xl
+}
+
+.referral-stat::before {
+	content: " ";
+	@apply
+		z-[-1]
+		absolute
+		top-0
+		left-0
+		w-full
+		h-full
+		rounded
+		opacity-10
+		pointer-events-none
+}
+
+.referred .referral-stat-value {
+	@apply
+		text-primary-main
+}
+
+.referral-stat.referred::before {
+	@apply
+		bg-primary-dark
+}
+
+.dollar .referral-stat-value {
+	@apply
+		text-success-light
+}
+
+.referral-stat.dollar::before {
+	@apply
+		bg-success-dark
+}
+
+.referrals-how-root {
+	@apply
+		max-w-100
+		w-full
+
+}
+
+.referrals-how {
+	@apply
+		flex flex-col
+}
+
+.referrals-how-step {
+	@apply
+		relative
+		flex
+}
+
+.referrals-how-step .step-num {
+	@apply
+		flex-shrink-0
+		flex items-center justify-center
+		bg-background-contrast
+		rounded-full
+		w-8 h-8
+		mr-4
+		text-primary-light
+		mt-2
+}
+
+.referrals-how-step .step-text h2 {
+	@apply
+		text-lg
+}
+
+.referrals-how-step:not(:last-child)::after {
+	content: " ";
+	@apply
+		absolute
+		left-0
+		bottom-[-1rem]
+		w-full
+		h-[1px]
+		bg-divider
+} */
+
+.myToken_container{
+	background-color:#FCFAF8;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 20px;
+	border-radius: 10px;
+	margin-top: 50px;
+}
+
+.myToken_inner .tabs_token_carl{
+	display: flex;
+	margin-top: 20px;
+	width: 70vw;
+	justify-content: center;
+	border-bottom: 1px solid;
+}
+
+.tabs_token_carl div{
+	padding: 12px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	cursor: pointer;
+	margin-right: 20px;
+	color: #582900;
+}
+.tabs_token_carl div:hover{
+	background-color:#582900;
+	color: white;
+}
+.carl_tokens_1a{
+	background-image: url('../../../public/imagescarlossy/maskgroup.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color:#EEEAE6;
+	/* text-align: center; */
+	padding: 24px;
+	border-radius: 10px;
+}
+.carl_tokens_1a button{
+	background-color: #582900;
+	padding: 14px;
+	font-family: Poppins;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+.carl_tokens_1a button:hover{
+	opacity: 0.7;
+}
+.carl_tokens_1{
+	display: flex;
+	flex-direction: column;
+	width: 33vw;
+	margin: 20px;
+	margin-top: 35px;
+}
+
+.carl_number{
+	font-weight: 900;
+	font-size: 1.7rem;
+	color: #582900;
+}
+.token_balance_text{
+	font-size: 0.8rem;
+}
+.carl_number_2{
+	margin-top: 10px;
+	font-size: 1rem;
+	font-weight: 600;
+	color: #582900;
+}
+.carl_tokens_1b{
+	margin-top: 20px;
+	border-radius: 10px;
+	background-color:#EEEAE6;
+	display: flex;
+	padding: 10px;
+	justify-content: space-between;
+}
+.carl_tokens_1b_inner{
+	margin-right: 23px;
+}
+.circle_container{
+	display: flex;
+	/* align-items: center; */
+}
+.circle_container1{
+	background-color:#3E1D00;
+}
+.circle_container2{
+	background-color: #744D2B;
+}
+.circle_container3{
+	background-color: #9E836B;
+}
+/* {
+	background-color: #582900;
+} */
+.myToken .small_circle{
+	height: 10px;
+	width: 10px;
+	/* background-color: #582900; */
+	border-radius: 50%;
+}
+.carl_tokens_flex{
+	display: flex;
+	margin-left: 30px;
+
+}
+.carl_tokens_2_inner{
+	display: flex;
+	flex-direction: column;
+}
+.carl_tokens_2_b{
+	background-color: #EEEAE6;
+	padding: 20px;
+	margin-top: 15px;
+	border-radius: 10px;
+	height: 34vh;
+}
+.carl_tokens_2_a{
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+}
+.carl_tokens_2_a .input_containertokens{
+	display: flex;
+	background-color: #EEEAE6;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	border-radius: 10px;
+}
+.carl_tokens_2_a .input_containertokens input{
+	background-color: #EEEAE6;
+	height: 20px;
+	border: none;
+	outline-width: 0;
+	padding: 15px;
+	font-size: 1rem;
+}
+.carl_tokens_2_a button{
+	background-color: #582900;
+	/* width: 100%; */
+	padding: 15px;
+	border-radius: 10px;	
+	margin-top: 10px;
+	font-family: Poppins;
+}
+
+.total_contr{
+	font-size: 0.7rem;
+
+}
+.carl_tokens_text_usd{
+	color: #582900;
+	font-weight: 900;
+	font-size: larger;
+	margin-bottom: 20px;
+}
+.currencies{
+	display: flex;
+}
+.currencies div{
+	margin-right: 5px;
+}
+.values_currency{
+	color: #582900;
+	font-weight: 700;
+	text-align: center;
+}
+.input_containertokens input{
+	font-family: Poppins;
+	color:#582900;
+}
+.myToken .welcomeText{
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: -20px;
+}

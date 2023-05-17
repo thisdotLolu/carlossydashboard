@@ -1,0 +1,41 @@
+html {
+	color-scheme: dark;
+	@apply
+		flex flex-col
+		min-h-full
+}
+
+body {
+	background-color: #EEEAE6;
+	color: black;
+	font-family: var(--theme-font-primary);
+	@apply
+		flex flex-col
+		m-0 p-0
+		flex-1
+		text-base
+}
+
+
+#root {
+	@apply
+		flex
+		flex-1
+		overflow-x-hidden
+
+		<md:flex-col-reverse
+}
+
+h1, h2, h3, h4, h5, h6 {
+	@apply
+		m-0
+}
+
+button {
+	@apply
+		border-none
+		outline-none
+		appearance-none
+		bg-transparent
+		cursor-pointer
+}

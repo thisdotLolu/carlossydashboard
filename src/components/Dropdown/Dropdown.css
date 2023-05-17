@@ -1,0 +1,71 @@
+.dropdown {
+	background-color:#744D2B;
+	@apply
+		cursor-auto
+		flex flex-col
+		items-stretch
+		fixed
+		shadow-8
+		rounded
+		max-w-[calc(100%-16px)]
+		min-w-[16rem]
+		!z-[10000]
+		py-2
+		max-h-[min(calc(100vh-10rem),15rem)]
+		overflow-y-auto
+		pointer-events-none
+		opacity-0
+		transition-opacity
+}
+
+.dropdown.open {
+	@apply
+		pointer-events-auto
+		opacity-100
+}
+
+.dropdown > .dropdown-item {
+	@apply
+		flex items-center justify-between
+		px-6
+		py-3
+		text-left
+		hover:bg-action-hover
+		transition-colors
+		!text-base
+		font-primary
+}
+
+.dropdown > .dropdown-item > svg {
+	@apply
+		fill-current
+		text-primary-main
+		ml-2
+}
+
+.dropdown.searchable {
+	@apply
+		pt-0
+		max-h-[min(calc(100vh-8rem),20rem)]
+}
+
+.dropdown .search-input-container {
+	background-color: ;
+	@apply
+		sticky
+		top-0
+		px-4
+		py-3
+}
+
+.dropdown .search-input {
+	background-color: #744D2B;
+	@apply
+		text-base
+		border-1
+		rounded
+		px-4
+		py-2
+		w-full
+		outline-primary-main
+}

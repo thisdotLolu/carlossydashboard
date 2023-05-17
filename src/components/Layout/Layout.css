@@ -1,0 +1,17 @@
+.page-container {
+	background-color: #EEEAE6;
+	/* z-index: -1; */
+	@apply
+		overflow-x-hidden
+		flex flex-col
+		flex-1
+		min-h-[var(--screen-height)]
+
+}
+
+
+.page-container.logged-in {
+	@apply
+		<md:pb-16
+		+md:pl-80
+}

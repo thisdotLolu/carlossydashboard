@@ -1,0 +1,162 @@
+.sidebar {
+	background-color: #FCFAF8;
+	height: 97vh;
+	margin-top: 7px;
+	margin-left: 7px;
+	/* margin-left: 7px */
+	border-radius: 10px;
+	@apply
+		fixed
+		top-0
+		left-0
+		
+		flex flex-col
+		min-w-80
+		
+		z-10
+
+		<md:w-full
+		<md:h-16
+		<md:top-[initial]
+		<md:bottom-0
+		<md:border-t-1
+		<md:border-divider
+}
+
+.sidebar .card-title {
+	@apply
+		<md:hidden
+}
+
+.sidebar .card-body {
+	
+	@apply
+		flex flex-col
+		flex-1
+
+		<md:p-0
+		<md:flex-row
+}
+
+.sidebar .separator {
+	@apply
+		flex-1
+		flex
+		justify-center
+		items-center
+
+		<md:hidden
+}
+
+.sidebar .list {
+	text-align: center;
+	@apply
+		flex flex-col
+		<md:flex-row
+		<md:justify-evenly
+		<md:flex-1
+}
+
+.sidebar .bottom-list {
+	@apply
+		<md:hidden
+}
+
+.sidebar .list > .button.disabled svg {
+	@apply
+		!text-action-disabled
+		!fill-current
+}
+
+.sidebar .list > .button.disabled {
+	
+	@apply
+		!bg-transparent
+		text-action-disabled
+}
+
+.sidebar .list > .button {
+	color: #582900;
+	font-size: medium;
+	text-align: center;
+	background-color: #EEEAE6;
+	@apply
+		<md:h-full
+		<md:flex <md:flex-col
+		<md:!items-center <md:!justify-center
+		<md:text-xs
+		<md:!py-0
+		<md:max-w-32
+		<md:flex-1
+}
+.sidebar .list>.button:hover{
+	color: white;
+}
+
+.sidebar .list > .button span {
+	text-align: center;
+	@apply
+		<md:absolute
+		<md:bottom-2
+		<md:whitespace-nowrap
+}
+.sidebar .list > .button svg {
+	@apply
+		<md:mb-3
+
+}
+
+.sidebar .list > .button .icon-container {
+	@apply
+		<md:mr-0
+		<md:mb-0.5
+}
+
+.sidebar .list > .button .icon-container svg {
+	@apply
+		<md:w-7
+		<md:h-7
+}
+.nav-list .button:not(.empty).icon.active {
+	background-color: #582900;
+	color: white;
+}
+
+.home-contact-carlossy {
+	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.home-contact-carlossy div{
+	background-color: #EEEAE6;
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+	padding-left: 0px;
+	border-radius: 10px;
+	width: 100%;
+	font-size: 1rem;
+	text-align: center;
+	/* color: white */
+	margin-bottom: 10px;
+}
+
+.home-contact-carlossy div:hover {
+	background-color: #582900;
+	color: white;
+}
+
+.home-contact-carlossy a:hover {
+	color: white;
+}
+
+.home-contact-carlossy a {
+	text-decoration: none;
+	text-align: center;
+	color: #582900;
+	cursor: pointer;
+	margin-left: 8px;
+}

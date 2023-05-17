@@ -1,0 +1,12 @@
+/* *{
+    border: 1px dashed;
+} */
+
+@font-face {
+    font-family: 'GROBOLD';
+    src: local('GROBOLD'), url(./fonts/grobold/GROBOLD.ttf) format('woff');
+}
+
+.grobold {
+    font-family: GROBOLD;
+}

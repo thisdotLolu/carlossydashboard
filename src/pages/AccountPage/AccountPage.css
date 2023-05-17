@@ -1,0 +1,134 @@
+.account-page {
+	@apply
+		+md:flex-1
+		<md:min-h-[var(--screen-height)]
+}
+
+.account-page .gap-wrapper {
+	@apply
+		flex flex-1
+		items-start
+		p-2
+		<lg:flex-col
+
+}
+
+.account-page .input-root .left-container {
+	@apply
+		w-18
+}
+.account-page .input-root{
+	background-color: #EEEAE6;
+}
+.profile-card {
+	background-color: #FCFAF8;
+	width: 40vw;
+	/* margin-top: 75px; */
+	height: 90vh;
+	@apply
+		/* w-[calc(100%-1rem)] */
+		/* max-w-150 flex-[2] */
+		<md:max-w-none
+}
+
+
+.wallet-card {
+	@apply
+		w-[calc(100%-1rem)]
+		max-w-150 flex-[1.5]
+		+lg:min-w-80
+		<md:max-w-none
+}
+.account-page-inner{
+	display: flex;
+}
+.account-page-inner p{
+	font-size: 2rem;
+	color: white;
+	background-color:#582900;
+}
+
+.tab_profile{
+	margin-left: 55px;
+	/* border-top-left-radius: 10px; */
+	/* border-top-right-radius: 10px; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 70vw;
+	background-color:#FCFAF8;
+	border-bottom:1px solid;
+	margin-top: 40px;
+}
+.tab_profile a{
+	padding: 20px;
+	color: black;
+	font-family: Poppins;
+	font-size: 1rem;
+	
+}
+.tab_profile a:hover{
+	background-color: #582900;
+	color: white;
+	border-radius: 10px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.profile_page_tab{
+	display: flex;
+	width: 70vw;
+	margin-left: 40px;
+	margin-top:-15px;
+	/* border: 1px solid; */
+}
+
+.column_2_profile{
+	background-color: #FCFAF8;
+	width: 30vw;
+
+}
+.date_picker{
+	background-color: #EEEAE6;
+	padding: 20px;
+	/* margin-top: 110px; */
+	border: none;
+	border-radius: 10px;
+	width: 18vw;
+}
+.Account_Status{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 25px;
+	background-color: #EEEAE6;
+	width: 18vw;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+.Account_Status .mt-4{
+	opacity: 0.4;
+}
+.Account_Status img{
+	height: 13px;
+}
+.nationality_profile{
+	margin-left: 10px;
+}
+
+.your_profile_text{
+	background-color: #FCFAF8;
+	height: 50px;
+	margin-bottom: -40px;
+	width: 70vw;
+	margin-left: 55px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	font-weight: 900;
+	padding: 20px;
+}
+.account-page .welcomeText{
+	margin-top: 30px;
+	margin-left: 60px;
+	margin-bottom: 20px;
+}

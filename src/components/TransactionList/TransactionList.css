@@ -1,0 +1,254 @@
+.transactions-wrapper{
+	background-color: #FCFAF8;
+	@apply
+		h-full
+}
+
+.transactions-list {
+	@apply
+		shadow-card
+		rounded-card
+}
+
+.transaction-item:not(:last-child) {
+	@apply
+		border-b-1
+		border-divider
+}
+
+.transaction-item {
+	@apply
+		p-4
+		flex
+		bg-background-paper
+
+		<md:overflow-x-auto
+}
+
+.transaction-item .item-value {
+	font-size: 0.98rem;
+	@apply
+		flex
+		items-center
+		flex-1
+		font-semibold
+		leading-[1.1em]
+		<sm:text-sm
+}
+
+.transaction-item .value-group {
+	/* background-color: white; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	/* flex-direction: row; */
+	@apply
+		w-full
+}
+.value-group img{
+	width:30px;
+	object-fit: contain;
+	height: 15px;
+	
+}
+
+.transaction-item .transaction-chip {
+	@apply
+		font-normal
+		max-w-24
+		justify-center
+		mr-1
+		w-full
+		<md:p-1
+		<sm:text-xs
+}
+
+.transaction-item .value-sub {
+	@apply
+		text-text-secondary
+		text-sm
+		<sm:text-xs
+}
+
+.transaction-item .token-value {
+	flex-direction: column;
+	@apply
+		w-32
+		flex-grow-0
+		!flex-shrink-0
+}
+
+.transaction-item .action-value {
+	flex-shrink: 0 !important;
+	flex-grow: 0 !important;
+	@apply
+		!min-w-18
+		!w-18
+}
+
+.transaction-item .token-image {
+	@apply
+		w-9
+		h-9
+		rounded-full
+		mr-3
+}
+
+.transaction-item .token-value span {
+	@apply
+		font-semibold
+}
+
+.transaction-item-body {
+	@apply
+		flex flex-row
+		!pr-12
+		justify-between
+		<md:justify-start
+}
+
+
+.transaction-body-item {
+	@apply
+		flex
+		flex-col
+		p-2
+}
+
+.transaction-body-label {
+	@apply
+		font-bold
+		text-sm
+		mb-1
+}
+
+.transaction-body-value {
+	@apply
+		my-auto
+}
+
+.transaction-details .card-title{
+	font-size: medium;
+	margin-top: -40px;
+}
+
+.transaction-details {
+	background-color:#FCFAF8 ;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 0.7rem;
+	height: 99vh;
+	@apply
+		w-full
+		max-w-110
+}
+
+.transaction-details .qr-code {
+	@apply
+		mx-auto
+		flex-shrink-0
+		mr-4
+}
+
+.transaction-details-body {
+	@apply
+		flex flex-col
+}
+
+.transaction-details .form-item {
+	font-size: 0.2rem;
+	@apply
+		flex flex-col
+}
+.transaction-details .input-root{
+	height: 37px;
+	background-color: #EEEAE6;
+}
+
+.transaction-details label {
+	@apply
+		mb-0.5
+		text-sm
+}
+
+.transaction-details .pending-container {
+	align-items: center;
+	justify-content: center;
+	@apply
+		flex
+		!mb-4
+}
+
+.pending-container img{
+	height: 25vh;
+	object-fit: contain;
+	margin-bottom: -30px;
+	margin-top: -10px;
+}
+
+
+.transaction-details .warning {
+	@apply
+		relative
+		flex
+		p-2
+		px-3
+		text-base
+		leading-[1.2em]
+}
+
+.transaction-details .warning::before {
+	content: " ";
+	@apply
+		absolute
+		top-0 left-0
+		w-full h-full
+		bg-warning-light
+		opacity-40
+		rounded-item
+		border-2
+		border-warning-dark
+}
+
+.transaction-details .warning svg {
+	@apply
+		relative
+		z-2
+		top-1.5
+		mr-1
+		fill-current
+}
+
+.transaction-details .warning-wrapper {
+	@apply
+		my-auto
+		relative
+		z-2
+}
+.transaction-item:not(:last-child){
+	border-color:#582900;
+}
+.tablehead{
+	border-radius: 10px;
+	color: #FCFAF8;
+	background-color: #582900;
+	padding-top: 15px;
+	padding-bottom:15px;
+	display: flex;
+	justify-content: space-evenly;
+}
+.tablehead div{
+	margin-right: 2.9rem;
+}
+.payment-column{
+	margin-left: 40px;
+}
+.amount-column{
+	display: flex;
+	flex-direction: column;
+	
+}
+.token-value{
+	margin-left: 20px;
+}

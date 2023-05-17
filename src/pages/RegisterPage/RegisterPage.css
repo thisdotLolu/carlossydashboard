@@ -1,0 +1,15 @@
+.register-page .input-root .left-container {
+	@apply
+		w-18
+}
+
+.page_top_carlossy{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 180px;
+}
+.page_top_carlossy h1{
+	margin-top: 20px;
+}
