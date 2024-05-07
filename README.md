@@ -8,5 +8,4 @@ Next, you're ready to start development with
 
 Finally, navigate to `localhost:4050` and register an account
 
-## Other notes
-For any questions contact Mike via Discord (Mike#5187)
+
